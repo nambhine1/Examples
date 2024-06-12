@@ -29,8 +29,7 @@ module lfsr_8bit
    output [7:0] data
    );
 
-
-   logic [8:0] 	lfsr = 8'b11111111;
+   logic [7:0] 	lfsr = 8'b11111111;
    logic [3:0] 	lfsr_feedback;
    assign lfsr_feedback= {lfsr[7],lfsr[5:3]};
 
